@@ -1,12 +1,14 @@
-from selenium import webdriver
+import os
+import sys
 import time
 import unittest
+
 import HtmlTestRunner
-import sys
-import os
+from selenium import webdriver
+
 sys.path.append(os.path.join(os.path.dirname(__file__),"..",".."))
-from Sample.Pages.loginPage import LoginPage
-from Sample.Pages.HomePage import HomePage
+from JagaPOM.Pages.loginPage import LoginPage
+from JagaPOM.Pages.HomePage import HomePage
 
 class LoginTest(unittest.TestCase):
 
